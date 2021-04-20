@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(94, 2, 2);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    white-space: pre;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li a {
+    color: white;
+}
+
+nav img {
+    height: 50px;
+}
+.card{
+    width: 500px;
+    padding: 14px;
+    display: flex;
+    margin: 18px;
+    align-items: center;
+    border: 1px solid;
+    flex-direction: column;
+}
+.card img{
+    width: 400px;
+    
+}

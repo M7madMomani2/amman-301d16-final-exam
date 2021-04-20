@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('head') %>
+        <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <%- include('header') %>
+    </header>
+
+    <%results.forEach(result=>{%>
+    <div class="card">
+        <h2><%= result.character%></h2>
+        <img src="<%= result.image%>" alt="">
+        <p><%= result.quote%></p>
+        <form action="/" method="post">
+            <input type="hidden" name="character" value="<%=result.character%>">
+            <input type="hidden" name="image" value="<%=result.image%>">
+            <input type="hidden" name="quote" value="<%=result.quote%>">
+            <input type="hidden" name="characterDirection" value="<%=result.characterDirection%>">
+            <input type="submit" value="SAVE">
+        </form>
+    </div>
+        <% }) %>
+
+   
+
+</body>
+
+</html>
